@@ -5,7 +5,11 @@ const config: PlaywrightTestConfig = {
   use: {
     headless: false,
     screenshot: "only-on-failure",
-    video: "retry-with-video"
+    video: "retry-with-video",
+    launchOptions:{
+      // add delay, debugging whatever
+      // slowMo: 1000
+    }
   },
   retries: 0,
   reporter: [
