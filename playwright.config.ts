@@ -1,7 +1,7 @@
 import { PlaywrightTestConfig } from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["tests/basicInteractions.test.ts"],
+  // testMatch: ["tests/alert.test.ts"],
   use: {
     headless: false,
     screenshot: "only-on-failure",
