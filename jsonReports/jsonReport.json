@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests\\calendar.test.ts",
-      "file": "tests/calendar.test.ts",
+      "title": "tests\\uploadDownload.test.ts",
+      "file": "tests/uploadDownload.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "JQuery calendar",
+          "title": "Upload file",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,21 +80,25 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 7383,
+                  "duration": 4059,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[33mtrue\u001b[39m\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-11-09T13:05:45.008Z",
+                  "startTime": "2023-11-09T18:41:47.156Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "68c95afee124c9066c67-e6a850815005e1f26661",
-          "file": "tests/calendar.test.ts",
-          "line": 3,
+          "id": "bff505410ff9353f2355-dab3d967f7825a76472a",
+          "file": "tests/uploadDownload.test.ts",
+          "line": 28,
           "column": 5
         }
       ]
@@ -102,7 +106,7 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-11-09T13:05:44.243Z",
-    "duration": 8975.657
+    "startTime": "2023-11-09T18:41:46.350Z",
+    "duration": 5735.116
   }
 }
