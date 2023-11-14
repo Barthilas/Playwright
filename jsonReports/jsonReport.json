@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests\\uploadDownload.test.ts",
-      "file": "tests/uploadDownload.test.ts",
+      "title": "pomtest\\addToCart.test.ts",
+      "file": "pomtest/addToCart.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Upload file",
+          "title": "Register test_01",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,25 +80,85 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 4059,
+                  "duration": 3952,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "\u001b[33mtrue\u001b[39m\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-11-09T18:41:47.156Z",
+                  "startTime": "2023-11-14T15:30:11.125Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "bff505410ff9353f2355-dab3d967f7825a76472a",
-          "file": "tests/uploadDownload.test.ts",
-          "line": 28,
+          "id": "1c188a18f2ecab048a02-8946dbd2929c55bacfa0",
+          "file": "pomtest/addToCart.test.ts",
+          "line": 13,
+          "column": 5
+        },
+        {
+          "title": "Login test_02",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 3156,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-14T15:30:15.676Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c188a18f2ecab048a02-0035c5ea8873ae85bee2",
+          "file": "pomtest/addToCart.test.ts",
+          "line": 32,
+          "column": 5
+        },
+        {
+          "title": "Add to card test_03",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 5166,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-14T15:30:18.834Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c188a18f2ecab048a02-284185dad37c2b7e3d6a",
+          "file": "pomtest/addToCart.test.ts",
+          "line": 40,
           "column": 5
         }
       ]
@@ -106,7 +166,7 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-11-09T18:41:46.350Z",
-    "duration": 5735.116
+    "startTime": "2023-11-14T15:30:10.451Z",
+    "duration": 13807.056999999999
   }
 }

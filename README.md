@@ -5,3 +5,5 @@ run
 npx playwright test
 record
 npx playwright codegen
+
+F8 in sources pauses the page execution.. useful for alerts that disappear.

@@ -3,6 +3,7 @@ import { PlaywrightTestConfig } from "@playwright/test";
 const config: PlaywrightTestConfig = {
   // testMatch: ["tests/alert.test.ts"],
   use: {
+    baseURL: "https://ecommerce-playground.lambdatest.io/index.php?", // remove if needed.
     headless: false,
     screenshot: "only-on-failure",
     video: "retry-with-video",
