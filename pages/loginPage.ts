@@ -7,6 +7,7 @@ export default class LoginPage {
     await this.enterEmail(email);
     await this.enterPassword(password);
     await this.clickLoginBtn();
+    await 
   }
 
   async enterEmail(email: string) {
@@ -20,7 +21,7 @@ export default class LoginPage {
   async clickLoginBtn() {
     Promise.all([
       this.page.waitForLoadState(),
-      this.page.click("input[value='Login']"),
+      this.page.click("#login-form-submit-button"),
     ]);
   }
 }

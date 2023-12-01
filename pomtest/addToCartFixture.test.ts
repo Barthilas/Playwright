@@ -1,9 +1,7 @@
-import { expect, test } from "@playwright/test";
-import RegisterPage from "../pages/registerPage";
+import { test } from "../base/pomFixture";
+import { expect } from "@playwright/test";
 import BasePage from "../pages/basePage";
-import LoginPage from "../pages/loginPage";
-import { HomePage } from "../pages/homePage";
-import { ApplePage } from "../pages/applePage";
+import * as data from "../test-data/addToCart-test-data.json";
 
 // ideally we use different data for login and register.
 // in this case it has dependant order, which is wrong.
@@ -19,12 +17,15 @@ const email = `${BasePage.generateRandomText(8)}@eviltester.com`;
 // or all other than.
 // npx playwright test --grep-invert @slow
 test.describe("Page object demo @fast", async () => {
-  test("Register test_01", async ({ page, baseURL }) => {
+  test("Register test_01", async ({ page, baseURL, registerPage }) => {
+    // or use the json file...
+    // const firstNameJson = data.firstName;
+
     const firstName = BasePage.generateRandomText();
     const lastName = BasePage.generateRandomText();
     const telephone = BasePage.generateRandomNumbers(10);
 
-    const registerPage = new RegisterPage(page);
+    // const registerPage = new RegisterPage(page);
     await page.goto(`${baseURL}route=account/register`);
     await registerPage.enterFirstName(firstName);
     await registerPage.enterLastName(lastName);
@@ -38,18 +39,24 @@ test.describe("Page object demo @fast", async () => {
     await registerPage.clickContinueToRegister();
   });
 
-  test("Login test_02", async ({ page, baseURL }) => {
-    const loginPage = new LoginPage(page);
+  test("Login test_02", async ({ page, baseURL, loginPage }) => {
+    // const loginPage = new LoginPage(page);
     await page.goto(`${baseURL}route=account/login`);
     loginPage.login(email, password);
     await page.waitForLoadState("networkidle");
     expect(await page.title()).toBe("My Account");
   });
 
-  test("Add to card test_03", async ({ page, baseURL }) => {
-    const loginPage = new LoginPage(page);
-    const homePage = new HomePage(page);
-    const applePage = new ApplePage(page);
+  test("Add to card test_03", async ({
+    page,
+    baseURL,
+    loginPage,
+    homePage,
+    applePage,
+  }) => {
+    // const loginPage = new LoginPage(page);
+    // const homePage = new HomePage(page);
+    // const applePage = new ApplePage(page);
 
     await page.goto(`${baseURL}route=account/login`);
     await loginPage.login(email, password);
